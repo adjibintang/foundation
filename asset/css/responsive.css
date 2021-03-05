@@ -1,0 +1,42 @@
+/* Responsive Table Exercise CSS*/
+
+@media screen and (max-width: 440px){
+	.table-wrapper table{
+		width: 100%;
+	}
+
+	.table-wrapper thead{
+		border: none;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		clip: rect(0 0 0 0);
+	}
+
+	.table-wrapper tr{
+		border-bottom: 3px solid #ddd;
+		display: block;
+		margin-bottom: .625em;
+	}
+
+	.table-wrapper td{
+		padding:20px 20px;
+		border-bottom: 1px solid #ddd;
+		font-size: .8em;
+		display: block;
+		text-align: right;
+	}
+
+	.table-wrapper td::before{
+		content: attr(data-label);
+		float: left;
+		font-weight: bold;
+    	text-transform: uppercase;
+	}
+
+	.table-wrapper td:last-child {
+    	border-bottom: 0;
+  	}
+}
