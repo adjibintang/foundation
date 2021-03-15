@@ -1,6 +1,5 @@
-/* Responsive Table Exercise CSS*/
 
-@media screen and (max-width: 440px){
+@media (max-width: 575.98px) {
 	.table-wrapper table{
 		width: 100%;
 	}
@@ -39,4 +38,129 @@
 	.table-wrapper td:last-child {
     	border-bottom: 0;
   	}
+
+  	.header-left{
+  		display: none;
+  	}
+  	.header-right{
+  		display: none;
+  	}
+  	.menu a{
+  		text-decoration: none;
+  		display: block;
+  		color: white;
+  		padding: 0 20px;
+  	}
+  	.menu a:active{
+  		background-color: black;
+  	}
+  	.heading h1{
+		font-size: 48px;
+		margin-top: 150px;
+	}
+	.top-wrapper{
+		margin-top: 160px;
+	}
+	.top-wrapper h1{
+		font-size: 32px;
+	}
+	.top-wrapper h2{
+		font-size: 20px;
+	}
+	.heading h2{
+		font-size: 20px;
+	}
+	.btn-violet{
+		font-size: 20px;
+	}
+	.main-wrapper{
+		padding-top: 60px;
+		margin-bottom: 60px;
+	}
+	.cats-wrapper{
+		margin-top: 70px;
+	}
+	.cat-form{
+		width: 100%;
+	}
+	.form-wrapper{
+		margin-top: 60px;
+		padding-bottom: 50px;
+		text-align:center;
+	}
+  	.contact-wrapper{
+		width: 100%;
+		padding: 0;
+	}
+	.contact-wrapper form,input,textarea{
+		width: 100%;
+		display: inline-block;
+	}
+	.input-left{
+		width: 100%
+	}
+	.input-right{
+		width: 100%;
+	}
+	footer{
+		padding: 0;
+	}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.header-right{
+  		display: none;
+  	}
+  	.header-left{
+  		display: none;
+  	}
+  	.menu a{
+  		display: block;
+  		color: white;
+  		padding: 0 20px;
+  	}
+	.heading h1{
+		font-size: 48px;
+		margin-top: 150px;
+	}
+	.cats{
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.contact-wrapper{
+		width: 100%;
+		padding: 0;
+	}
+	.contact-wrapper form,input,textarea{
+		width: 100%;
+		display: inline-block;
+	}
+	.input-left{
+		width: 100%
+	}
+	.input-right{
+		width: 100%;
+	}
+	footer{
+		padding: 0;
+	}
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media  (min-width: 992px) and (max-width: 1025px) {
+	.cats{
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+	}
 }
